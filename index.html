@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture & Quiz</title>
+    <script defer src="app.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; }
+        video { width: 100%; }
+        .quiz-container { margin-top: 20px; }
+        .question { font-weight: bold; margin-top: 10px; }
+        button { margin-top: 10px; padding: 10px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <h1>Lecture & Quiz</h1>
+
+    <!-- Video Section -->
+    <h2>Chapter Video</h2>
+    <iframe id="video" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+
+    <!-- Quiz Section -->
+    <div class="quiz-container">
+        <h2>Quiz</h2>
+        <div id="quiz"></div>
+        <button onclick="submitQuiz()">Submit Quiz</button>
+        <p id="result"></p>
+    </div>
+
+</body>
+</html>
